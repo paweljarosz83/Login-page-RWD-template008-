@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+
+
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Lato" />
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+<!-- 
+<link rel="stylesheet" href="/css/medias.css"/>
+	 -->
+
+<style>
+.thumbImage{
+	max-height: 75px;
+}
+
+.thumbnail {
+	height: 100%;
+	padding-top:0;
+	padding-right:0;
+	padding-left:0;
+	display: flex;
+	flex-direction: column;
+	border: 0px solid;
+	border-color: #FEFEFA;
+	background-color: white;
+	max-width:315px;
+	margin:0 auto;
+	margin-bottom:16px;
+	
+}
+
+.thumbnail .caption {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.gameTitleThumb {
+	font-family: 'Lato', serif;
+	color: gray;
+	font-size: 1.0em;
+}
+.gameAuthorThumb{
+	font-family: 'Lato', serif;
+	color: gray;
+	font-size: 0.8em;
+
+}
+.roundedImage{
+    /*border-radius: 5px;*/
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+body{
+	margin:0;
+	background-color:#f6f7f8;
+}
+.container{
+	margin:0;
+}
+.thumbnail{
+max-width:315px !important;
+}
+
+
+
+
+
+
+
+#topp{
+background-color: white;
+}
+#raz{
+background-color:#166088;
+margin-top:8px;
+color:white;
+border-color:#166088;
+}
+#dwa{
+border-color:#db5461;
+background-color:#db5461;
+margin-top:8px;
+color:white;
+}
+.badge{
+background-color:#76b041;
+}
+
+
+
+
+#margin15R{
+	margin-right:16px;
+	width:140px;
+}
+
+#textAlighC{
+	text-align:center;
+}
+
+#isaut{
+	margin-top:15px;
+}
+
+#nav-bra{
+margin-top:0;
+padding:0;
+background-color:red;
+}
+
+
+#detailsDiv{
+  	border: 2px solid white;
+    border-radius: 5px;
+    background-color:white;
+    height:300px;
+   
+   
+}
+</style>
+
+
+
+
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>
+
+
+//<![CDATA[ 
+
+
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+//]]>
+</script>
+
+
+
+
+
+	<div class="navbar navbar-default navbar-static-top" id="topp">
+
+		<div class="navbar-brand" id="nav-bra">
+			<img src="/images/logoNowet4t.png" class="pull-left" />
+		</div>
+
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+
+		
+		<ul class="nav navbar-nav navbar-right" id="margin15R">
+		
+			<div sec:authorize="isAuthenticated()" style="background-color:red" id="isaut">
+			
+			
+				<li id="textAlighC" class="pull-left">			
+					Hi, <span sec:authentication="name" ></span>
+				</li>
+				
+				<li>
+					<form sec:authorize="isAuthenticated()" id="frmlogout" th:action="@{/logout}" method="post"  class="pull-right">
+								
+						<a href="javascript:{}" onclick="document.getElementById('frmlogout').submit(); return false;"> Log out</a>
+					
+					</form>
+			
+				</li>
+			</div>
+			
+			<div sec:authorize="!isAuthenticated()">
+		
+				<li>
+					<button type="button" class="btn btn-default" id="raz">Login</button>
+					<button type="button" class="btn btn-default" id="dwa">Register</button>
+				</li>
+			
+			</div>
+		
+		
+			
+		</ul>
+	</div>
+
+
+	<div class="container-fluid">
+		
+		<div class="row" style="background-color:#f6f7f8">
+			
+			
+			<div class="col-xs-12 col-sm-4 col-md-3" style="background-color:#f6f7f8">
+				<div class="collapse navbar-collapse navHeaderCollapse" id="navHeaderCollapse">
+					<div class="list-group">
+						
+						<a href="/" class="list-group-item"> <i class="fa fa-search"></i> Browse games</a>
+						
+						 <a href="#" class="list-group-item"> <i class="fa fa-rocket"></i>
+							Your projects <span class="badge">1</span></a> <a href="#"
+							class="list-group-item"> <i class="fa fa-folder-open-o"></i>
+							In<span class="badge">14</span></a> <a href="#"
+							class="list-group-item"> <i class="fa fa-folder-open-o"></i>
+							Out<span class="badge">6</span></a> <a href="#"
+							class="list-group-item"> <i class="fa fa-user"></i> Profile
+						</a> <a href="#" class="list-group-item"> <i
+							class="fa fa-question-circle"></i> About
+						</a>
+					</div>
+					<div class="fb-like" data-href="https://www.facebook.com/test4test.io/" 
+					data-layout="box_count" data-action="like" data-size="small" data-show-faces="true" data-share="true">aa</div>
+				</div>
+			</div>
+				
+					
+					
+				
+					<div class="col-xs-12 col-sm-8 col-md-9"  id="detailsDiv">
+			
+			
+					<div th:text="${game.title}"></div>
+							</div>
+						</div>
+					</div>
+		
+		
+	
+
+<script>
+
+
+$("#raz").click(function(){
+	
+	window.location.replace("/login");
+})
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

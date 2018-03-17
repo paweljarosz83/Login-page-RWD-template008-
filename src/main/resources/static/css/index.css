@@ -1,0 +1,99 @@
+@CHARSET "UTF-8";
+
+
+body{
+	margin:0;
+	background-color:#f6f7f8;
+}
+.container{
+	margin:0;
+}
+.navbar-static-top{
+	background-color: white;
+}
+
+.navbar-right{
+	margin-right:16px;
+	width:140px;
+}
+
+.navbar-brand{
+	padding-top:0;
+	padding-left:6px;
+}
+
+#isaut{
+	margin-top:15px;
+}
+
+
+
+.thumbnail {
+	height: 100%;
+	padding-top:0;
+	padding-right:0;
+	padding-left:0;
+	display: flex;
+	flex-direction: column;
+	border: 0px solid;
+	border-color: #FEFEFA;
+	background-color: white;
+	max-width:315px;
+	margin:0 auto;
+	margin-bottom:32px;
+	
+}
+.roundedImage{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.thumbnail .caption {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.badge{
+	background-color:#76b041;
+}
+
+
+
+
+
+#loginButton{
+	background-color:#166088;
+	margin-top:8px;
+	color:white;
+	border-color:#166088;
+}
+
+#registerButton{
+	border-color:#db5461;
+	background-color:#db5461;
+	margin-top:8px;
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

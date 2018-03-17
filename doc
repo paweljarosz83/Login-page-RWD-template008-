@@ -1,0 +1,9 @@
+DOKUMENTACJA  10.08.2017
+
+ZMIANA SPOSOBU LOGOWANIA EMAIL/USERNAME
+
+1 nazwa pola w login.html musi sie zgadzać z:
+2 SecurityConfig .usernameParameter("username")
+3 UserServiceImpl wszytskie pozotale metody muszą zwracać odpowiednie wartości. Inaczej bedzie błąd niepoprawny user lub hasło a chodzi o inne ustawienia.
+4 w userze na rolach: 	@ManyToMany(cascade=CascadeType.ALL,fetch=FetchType.EAGER)
+5

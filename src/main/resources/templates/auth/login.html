@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+	
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<title>Login</title>
+
+
+
+<link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel='stylesheet' th:href="@{/css/login.css}" />
+<link rel='stylesheet' th:href="@{/css/bootstrap-social.css}" />
+<link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto' type='text/css' />
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Exo' type='text/css' />
+</head>
+
+
+<body >
+	
+	<!-- 
+		<div class="container">
+		<div class="row">
+	 -->
+
+		<form name="f" th:action="@{/login}" method="post" class="form-signin">
+
+			<div class="form-signin-heading">
+			
+			<img src="/images/logoNowet4t.png" class="pull-left"/>
+			
+			Sign in
+			</div>	
+			
+			
+			
+			<div class="message" th:utext="${message}">indie games beta testing</div>
+
+			<div th:if="${param.error}" class="alert alert-danger">
+			 	<span th:text="#{prop.login.error}" class="alertText"></span>
+			</div>
+
+			<div th:if="${param.logout}" class="alert alert-success">Loged out</div>
+
+			<input type="text" id="login" name="kasztan" class="form-control input-box" placeholder="username" required="true" /> 
+		
+				
+			<input type="password" id="password" name="password" class="form-control" placeholder="password" required="true" autocomplete="off" />
+			
+		
+			<div id="forgot"><a href="/forgot">Forgot password?</a></div>
+				 
+
+			<button class="btn btn-lg btn-block" id="logginButton" type="submit">Login</button>
+			
+
+			<div class="text-center orr">- OR -</div>
+			
+			
+			<a class="btn btn-default btn-block" id="register" href="/register">Register</a>
+			
+			
+			
+			
+			
+			<div id="singIn">Sign in with:</div>
+	
+			<div class="socialBox">
+				<div class="container-fluid" >
+					
+					
+					<!-- 
+					<div class="row">
+					
+						<div class="col-md-12" id="singleButtonColumn">
+						 	<a class="btn btn-block btn-social btn-github"><span class="fa fa-github"></span> Github</a>
+						</div>
+	
+					</div>
+					
+					 -->
+					
+			
+					
+					
+				
+					<div class="row">
+					
+						<div class="col-md-6" id="facebookButtonColumn">
+							 <a class="btn btn-block btn-social btn-facebook"><span class="fa fa-facebook"></span>Facebook</a>
+						</div>	
+						 
+						<div class="col-md-6" id="gitButtonColumn">
+						 	<a class="btn btn-block btn-social btn-github"><span class="fa fa-github"></span> Github</a>
+						</div>
+	
+					</div>
+					
+				
+					<div class="row" id="lowerSocial">
+						
+						<div class="col-md-6" id="facebookButtonColumn">
+							 <a class="btn btn-block btn-social btn-google"><span class="fa fa-google"></span>Google</a>
+						</div>	
+						 
+						<div class="col-md-6" id="gitButtonColumn">
+						 	<a class="btn btn-block btn-social btn-twitter"><span class="fa fa-twitter"></span> Twitter</a>
+						</div>
+					
+					</div>
+			 
+				
+				</div>
+			</div>
+
+
+			<div id="disclaimer">
+			Here you can read some more about our
+			<a href="/terms">Terms</a> and <a href="/terms">Privacy Policy</a></div>
+
+
+
+
+
+			
+		</form>
+		
+		<!-- 
+		</div>
+		</div>
+		 -->
+		
+
+
+
+
+
+
+
+</body>
+</html>

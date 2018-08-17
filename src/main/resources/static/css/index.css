@@ -8,23 +8,9 @@ body{
 .container{
 	margin:0;
 }
-.navbar-static-top{
-	background-color: white;
-}
 
-.navbar-right{
-	margin-right:16px;
-	width:140px;
-}
 
-.navbar-brand{
-	padding-top:0;
-	padding-left:6px;
-}
 
-#isaut{
-	margin-top:15px;
-}
 
 
 
@@ -61,21 +47,6 @@ body{
 
 
 
-
-
-#loginButton{
-	background-color:#166088;
-	margin-top:8px;
-	color:white;
-	border-color:#166088;
-}
-
-#registerButton{
-	border-color:#db5461;
-	background-color:#db5461;
-	margin-top:8px;
-	color:white;
-}
 
 
 

@@ -25,10 +25,10 @@ public class SecurityController {
 
 	
 	
-//	@RequestMapping("/login")
-//	public String loginPageDisplay(){
-//		return "auth/login";
-//	}
+	@RequestMapping("/login")
+	public String loginPageDisplay(){
+		return "auth/login";
+	}
 
 	
 	

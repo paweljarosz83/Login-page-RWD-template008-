@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+
+<script th:src="@{https://code.jquery.com/jquery-3.3.1.min.js}"></script>
+<script th:src="@{https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+<link th:href="@{https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css}" rel="stylesheet"/>
+
+</head>
+
+
+
+<body>
+
+	<div class="navbar navbar-default navbar-static-top" id="top">
+
+		<div class="navbar-brand">
+			<img src="/images/logo.png" />
+		</div>
+
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+
+		<div class="navbar-text pull-right">
+			<div sec:authorize="!isAuthenticated()">
+				<button type="button" class="btn btn-outline-dark" id="loginButton">Login</button>
+				<button type="button" class="btn btn-outline-dark" id="registerButton">Register</button>
+			</div>
+	    </div>
+	    	
+	    <div class="navbar-text navbar-right">
+			<div sec:authorize="isAuthenticated()">
+				<form sec:authorize="isAuthenticated()" id="frmlogout" th:action="@{/logout}" method="post" class="form-inline">
+				Hi <span sec:authentication="name"> </span> 
+					<a href="javascript:{}" onclick="document.getElementById('frmlogout').submit(); return false;">Log Out</a>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+				
+
+
+	<div class="collapse navbar-collapse navHeaderCollapse" id="navHeaderCollapse">
+		
+		<div class="list-group">
+
+			<a href="/" class="list-group-item" id="menu1"> <i class="fa fa-search"></i> Browse games </a> 
+			
+			<a href="/home" class="list-group-item" id="menu2"> <i class="fa fa-rocket"></i> Your projects <span class="badge">1</span></a>
+
+			<a href="/incomingPlaytests" class="list-group-item" id="menu3"> <i class="fa fa-folder-open-o"></i> In<span class="badge">14</span></a>
+				
+			<a href="/outgoingPlaytests" class="list-group-item"> <i class="fa fa-folder-open-o"></i> Out<span class="badge">6</span></a>
+			
+			<a href="/profile" class="list-group-item"> <i class="fa fa-user"></i> Profile</a> 
+			
+			<a href="/learnMore" class="list-group-item"> <i class="fa fa-question-circle"></i> About</a>
+		</div>
+
+		<div class="fb-like"
+			data-href="https://www.facebook.com/test4test.io/"
+			data-layout="box_count" data-action="like" data-size="small"
+			data-show-faces="true" data-share="true"></div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+
+	<nav class="navbar navbar-dark navbar-static-top" role="navigation" id="top">
+
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#navHeaderCollapse">
+				<span class="sr-only">Toggle navigation</span>
+				 <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+					<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="index.html"><img
+				src="/images/logo.png" id="brandImage" /></a>
+
+		</div>
+
+
+		<ul class="nav navbar-right top-nav">
+
+
+			<li class="dropdown"></li>
+
+			<div sec:authorize="isAuthenticated()">
+
+				<li class="dropdown userIndex"><a href="#"
+					class="dropdown-toggle" data-toggle="dropdown"><i
+						class="fa fa-user"></i> <span sec:authentication="name"></span> <b
+						class="caret"></b></a>
+					<ul class="dropdown-menu">
+
+						<li>
+							<form sec:authorize="isAuthenticated()" id="frmlogout"
+								th:action="@{/logout}" method="post" class="text-center">
+
+								<a href="javascript:{}"
+									onclick="document.getElementById('frmlogout').submit(); return false;">
+									<i class="fa fa-fw fa-power-off"></i> Log Out
+								</a>
+
+							</form>
+						</li>
+					</ul></li>
+			</div>
+			
+			<div sec:authorize="!isAuthenticated()">
+				<ul class="nav navbar-right">
+					<button class="btn btn-sm btn-success pull-right login-navbar" id="loginButton">Login</button>
+					<button class="btn btn-sm btn-success pull-right register-navbar" id="registerButton">Register</button>
+				</ul>
+			</div>
+		</ul>
+	</nav>
+	
+	
+	
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

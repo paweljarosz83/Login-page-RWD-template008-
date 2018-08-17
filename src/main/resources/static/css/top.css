@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+
+
+
+.navbar-brand{
+	
+}
+
+.selekt{
+	color:red;
+	background-color:red;
+}
+
+.redd{
+	color:red;
+}
+
+
+#loginButton{
+	border-color:black;
+	background-color:white;
+	color:black;
+}
+
+#registerButton{
+	border-color:black;
+	background-color:white;
+	color:black;
+	margin-right:8px;
+}
+.navbar-static-top{
+	background-color: white;
+}
+
+.navbar-right{
+	margin-right:16px;
+
+}
+
+.navbar-brand{
+	padding-top:0;
+	padding-left:6px;
+}
+

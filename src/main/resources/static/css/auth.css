@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+body {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-family: 'Roboto';
+	background-color:#404040;
+}
+
+.form-signin {
+	max-width: 330px;
+	padding: 16px;
+	padding-top: 16px;
+	margin: 0 auto;
+	background-color: white;
+	border-radius: 14px;
+}
+
+.form-signin .form-signin-heading {
+	margin-bottom: 16px;
+	text-align: right;
+	color: #124559;
+	background-color:;
+	font-size: 30px;
+	font-family:'Roboto';
+	font-weight: bold;
+	height: 60px;
+	line-height: 60px;
+}
+
+.form-signin .form-control {
+	position: relative;
+	height: 50px;
+	width: 100%;
+	background-color: #ffffff !important;
+	margin-bottom: 8px;
+	letter-spacing: 1px;
+	font-size: 16px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	outline: 0px;
+	border: 1px solid white;
+	border-radius: 4px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}
+
+.disclaimer {
+	margin-top: 16px;
+	font-size: 10px;
+	text-align: center;
+	color: #666b68;
+	font-family: 'Roboto';
+}
+
+.alertText {
+	font-family: 'Roboto';
+}
+
+.errorText {
+	font-family: 'Roboto';
+	font-size: 10px;
+	color: #ff6663;
+	letter-spacing: 1px;
+}
+
+.bigButton {
+	margin-top: 16px;
+	margin-bottom: 8px;
+	height: 48px;
+	border-color: #c8e718;
+	border-width:2px;
+	background-color: white;
+	color: #c8e718;
+}
+
+a:link {
+	color: #a2666f;
+}
+
+a:visited {
+	color: #a2666f;
+}
+
+a:hover {
+	color: #a2666f;
+}
+
+a:active {
+	color: #a2666f;
+}
+
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+
+input:focus {
+	box-shadow: inset 0 -5px 45px rgba(032, 190, 010, 0.4), 0 1px 1px
+		rgba(255, 255, 255, 0.2);
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #E8E8E8 inset;
+}
+
+.authLabel {
+	text-align: left;
+	font-family: 'Roboto';
+	letter-spacing: 1px;
+	font-size: 12px;
+	color: #709176;
+}
+
+.buttonOne {
+	height: 34px;
+	width: 100%;
+	float: center;
+	color: #eee;
+	border-radius: 4px;
+	background-color: #666b68;
+	border: 0px;
+	outline: 0px;
+	margin-top: 8px;
+}
+
+.buttonOne:link {
+    color: #eee;
+}
+.buttonOne:visited {
+    color: #eee;
+}
+.buttonOne:hover {
+    color: #666b68;
+}
+.buttonOne:active {
+    color: #666b68;
+}
+
+
+
+
+
+
+
+.message{
+	font-family: 'Roboto';
+	margin-bottom:16px;
+	color:white;
+}
+
+

@@ -1,60 +1,7 @@
-body {
-	padding-top: 40px;
-	padding-bottom: 40px;
-	background-color: red;
-	font-family: 'Roboto';
-}
 
-.form-signin {
-	max-width: 330px;
-	padding: 16px;
-	padding-top: 16px;
-	margin: 0 auto;
-	background-color: #f6f7f8;
-	border-radius: 14px;
-	margin: 0 auto;
-}
 
-.errorText {
-	font-family: 'Roboto';
-	font-size: 10px;
-	color: #ff6663;
-	letter-spacing: 1px;
-}
 
-.form-signin .form-signin-heading {
-	margin-bottom: 16px;
-	text-align: right;
-	color: #598392;
-	background-color:;
-	font-size: 30px;
-	font-weight: bold;
-	height: 60px;
-	line-height: 60px;
-}
 
-.form-signin .form-control {
-	position: relative;
-	height: 50px;
-	width: 100%;
-	background-color: #ffffff !important;
-	margin-bottom: 8px;
-	letter-spacing: 1px;
-	font-size: 16px;
-	border-bottom-right-radius: 4px;
-	border-bottom-left-radius: 4px;
-	outline: 0px;
-	border: 1px solid white;
-	border-radius: 4px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transition: box-shadow .5s ease;
-	-moz-transition: box-shadow .5s ease;
-	-o-transition: box-shadow .5s ease;
-	-ms-transition: box-shadow .5s ease;
-	transition: box-shadow .5s ease;
-}
 
 #forgot {
 	margin-bottom: 32px;
@@ -64,20 +11,6 @@ body {
 	letter-spacing: 1px;
 }
 
-#logginButton {
-	margin-top: 16px;
-	margin-bottom: 8px;
-	height: 48px;
-	border-color: #a39a92;
-	background-color: #598392;
-	color: #eee;
-}
-
-.orr {
-	margin-top: 8px;
-	font-size: 12px;
-	margin-bottom: 8px;
-}
 
 #register {
 	height: 34px;
@@ -88,53 +21,16 @@ body {
 	background-color: #124559;
 	border: 0px;
 	outline: 0px;
+	margin-bottom:8px;
+	margin-top:8px;
 }
 
-a:link {
-	color: #a2666f;
-}
-
-a:visited {
-	color: #a2666f;
-}
-
-a:hover {
-	color: #a2666f;
-}
-
-a:active {
-	color: #a2666f;
-}
-
-
-
-
-
-
-
-.alertText {
-	font-family: 'Roboto';
-}
-
-#lowerSocial {
-	margin-top: 8px;
-}
-
-#singIn {
+#signInWith {
 	margin-top: 16px;
-	font-family: 'Roboto';
 }
 
-#disclaimer {
+.socialBox {
 	margin-top: 16px;
-	font-size: 10px;
-	text-align: center;
-	color: #666b68;
-	font-family: 'Roboto';
-}
-
-.btn-social {
-	
 }
 
 #facebookButtonColumn {
@@ -147,23 +43,32 @@ a:active {
 	padding-right: 0px !important;
 }
 
+#lowerSocial {
+	margin-top: 8px;
+}
+
+#googleButtonColumn {
+	padding-left: 0px !important;
+	padding-right: 4px !important;
+}
+
+#twitterButtonColumn {
+	padding-left: 4px !important;
+	padding-right: 0px !important;
+}
+
 #singleButtonColumn {
 	padding: 0;
 }
 
-.socialBox {
-	margin-top: 16px;
-}
-
-.socialText {
-	font-family: 'Roboto';
-	font-size: 10px;
-	color: white;
-	text-align: right;
-}
-
 #faceButton {
 	background-color: #3b5998;
+	border: 0px;
+	outline: 0px;
+}
+
+#gitButton {
+	background-color: black;
 	border: 0px;
 	outline: 0px;
 }
@@ -174,99 +79,37 @@ a:active {
 	outline: 0px;
 }
 
-#gitButton {
-	background-color: black;
-	border: 0px;
-	outline: 0px;
-}
-/*do usniecie*/
-#centered {
-	text-align: center;
-	font-size: 100%;
-	color: #5CB85C;
-}
 
-.form-signin .form-control:focus {
-	z-index: 2;
-}
 
-.form-signin .checkbox {
-	font-weight: normal;
-}
 
-input:focus {
-	box-shadow: inset 0 -5px 45px rgba(032, 190, 010, 0.4), 0 1px 1px
-		rgba(255, 255, 255, 0.2);
-}
 
-.form-signin button {
-	margin-top: 10px;
-}
-
-.has-error {
-	color: red
-}
-
-/**   REGISTRATION  */
-#alreadyamember {
-	text-align: left;
-	font-family: 'Roboto';
-	letter-spacing: 1px;
-	font-size: 12px;
-	color: #709176;
-}
-
-#signin {
-	height: 34px;
-	width: 100%;
-	float: center;
-	color: #eee;
-	border-radius: 4px;
-	background-color: #666b68;
-	border: 0px;
-	outline: 0px;
-	margin-top: 8px;
-}
-
-hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid red;
-	margin: 1em 0;
-	padding: 0;
-}
-
-/**FORGOT**/
-#backToLogin {
-	margin-top: 16px;
-	text-align:center;
-	font-family: 'Roboto';
-	letter-spacing: 1px;
+@media (max-width: 992px){
 	
+	#facebookButtonColumn {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+		margin-bottom:2px;
+	}
+	
+	#gitButtonColumn {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+		margin-bottom:2px;
+	}
+	
+	#lowerSocial {
+		margin-top: 0px;
+	}
+	
+	#googleButtonColumn {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+		margin-bottom:2px;
+	}
+	
+	#twitterButtonColumn {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+		margin-bottom:2px;
+	}
 }
-
-
-
-.message{
-	font-family: 'Roboto';
-	margin-bottom:16px;
-	color:white;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

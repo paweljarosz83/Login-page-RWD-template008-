@@ -28,13 +28,13 @@
 			<img src="/images/logo.png" />
 		</div>
 
-		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse" id="menuToggle">
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
 
-		<div class="navbar-text pull-right">
+		<div class="navbar-text pull-right" id="notauthbuttons">
 			<div sec:authorize="!isAuthenticated()">
 				<button type="button" class="btn btn-outline-dark" id="loginButton">Login</button>
 				<button type="button" class="btn btn-outline-dark" id="registerButton">Register</button>
@@ -52,7 +52,7 @@
 	</div>
 	
 				
-
+	
 
 	<div class="collapse navbar-collapse navHeaderCollapse" id="navHeaderCollapse">
 		
@@ -64,11 +64,11 @@
 
 			<a href="/incomingPlaytests" class="list-group-item" id="menu3"> <i class="fa fa-folder-open-o"></i> In<span class="badge">14</span></a>
 				
-			<a href="/outgoingPlaytests" class="list-group-item"> <i class="fa fa-folder-open-o"></i> Out<span class="badge">6</span></a>
+			<a href="/outgoingPlaytests" class="list-group-item" id="menu4"> <i class="fa fa-folder-open-o"></i> Out<span class="badge">6</span></a>
 			
-			<a href="/profile" class="list-group-item"> <i class="fa fa-user"></i> Profile</a> 
+			<a href="/profile" class="list-group-item" id="menu5"> <i class="fa fa-user"></i> Profile</a> 
 			
-			<a href="/learnMore" class="list-group-item"> <i class="fa fa-question-circle"></i> About</a>
+			<a href="/learnMore" class="list-group-item" id="menu6"> <i class="fa fa-question-circle"></i> About</a>
 		</div>
 
 		<div class="fb-like"

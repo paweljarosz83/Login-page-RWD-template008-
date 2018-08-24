@@ -41,7 +41,7 @@ public class RegistrationServiceImpl implements RegistrationService{
 		
 		//user.setPassword(dto.getPassword());
 		
-		Role role = roleRepository.findById(ROLE_USER);
+		Role role = roleRepository.findById(ROLE_USER).get();
 		
 		//user.setPicture(createProfilePicture());
 		

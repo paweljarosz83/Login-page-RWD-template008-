@@ -8,21 +8,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<title>Login</title>
-
-
+<title>Password recovery</title>
 
 <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-<link rel='stylesheet' th:href="@{/css/login.css}" />
-<link rel='stylesheet' th:href="@{/css/bootstrap-social.css}" />
 <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto' type='text/css' />
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Exo' type='text/css' />
+<link rel='stylesheet' th:href="@{/css/bootstrap-social.css}" />
+<link rel='stylesheet' th:href="@{/css/forgot.css}" />
+<link rel='stylesheet' th:href="@{/css/auth.css}" />
 </head>
 
 
 <body >
-		<form action="#" th:action="@{/forgot}" th:object="${emailDTO4Reset}" th:method="post" class="form-signin">
+		<form action="#" th:action="@{/forgot}" th:object="${emailDTO4Reset}" th:method="post" class="form-signin" style="background-color:#eee">
 
 			<div class="form-signin-heading">Reset password</div>
 
@@ -32,12 +31,12 @@
 			 	<span th:text="#{prop.login.error}" class="alertText"></span>
 			</div>
 
-			<span th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="errorText"></span>
 			<input id="email" type="text" class="form-control" th:field="*{email}"  placeholder="email" /> 
+			<span th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="errorText"></span>
 		
-			<button class="btn btn-default btn-block" type="submit" id="register">Reset my password</button>
+			<button class="btn btn-default btn-block buttonOne" type="submit">Reset my password</button>
 
-			<div id="backToLogin"><a href="/login">Back to login page</a></div>
+			<div id="backToLogin" class="authLabel"><a href="/login">Back to login page</a></div>
 				
 		</form>
 </body>

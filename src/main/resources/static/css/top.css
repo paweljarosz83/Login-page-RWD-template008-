@@ -1,6 +1,24 @@
 @CHARSET "UTF-8";
 
+@media (max-width: 765px){
+	
+	
+	
+	/*
+	#notauthbuttons{
+		margin-top:0px;
+	}
+	*/
+	
+	
+	
+	
+	
+}
 
+#menuToggle{
+	margin-top:15px;
+}
 
 .navbar-brand{
 	
@@ -15,7 +33,6 @@
 	color:red;
 }
 
-
 #loginButton{
 	border-color:black;
 	background-color:white;
@@ -28,13 +45,13 @@
 	color:black;
 	margin-right:8px;
 }
+
 .navbar-static-top{
 	background-color: white;
 }
 
 .navbar-right{
 	margin-right:16px;
-
 }
 
 .navbar-brand{

@@ -22,17 +22,11 @@ public class SecurityController {
 	@Autowired
 	private RegistrationService registrationService;
 	
-
-	
-	
 	@RequestMapping("/login")
 	public String loginPageDisplay(){
-		return "auth/login";
+		return "/auth/login";
 	}
 
-	
-	
-	
 	@RequestMapping(value = "/register", method = RequestMethod.GET)
 	public String registerShow(UserDTO4Registration userDTO4Registration){
 		return "auth/register";
@@ -51,14 +45,4 @@ public class SecurityController {
 		
 		return "redirect:/login";
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

@@ -109,12 +109,15 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px #E8E8E8 inset;
 }
 
+
 .authLabel {
-	text-align: left;
+
 	font-family: 'Roboto';
 	letter-spacing: 1px;
 	font-size: 12px;
 	color: #709176;
+	margin-top: 16px;
+	text-align:center;
 }
 
 .buttonOne {
@@ -151,7 +154,7 @@ input:-webkit-autofill {
 .message{
 	font-family: 'Roboto';
 	margin-bottom:16px;
-	color:white;
+	color:#c0c0c0;
 }
 
 

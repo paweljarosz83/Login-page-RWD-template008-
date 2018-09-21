@@ -31,12 +31,16 @@
 			</div>	
 			
 			<div class="message" th:utext="${message}">indie games beta testing</div>
+			
+		
 
 			<div th:if="${param.error}" class="alert alert-danger">
 			 	<span th:text="#{prop.login.error}" class="alertText"></span>
 			</div>
 
 			<div th:if="${param.logout}" class="alert alert-success">Logged out</div>
+
+			
 
 			<input type="text" id="login" name="usernameparam" class="form-control input-box" placeholder="username" required="true" /> 
 			

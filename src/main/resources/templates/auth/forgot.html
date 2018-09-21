@@ -15,13 +15,12 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto' type='text/css' />
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Exo' type='text/css' />
 <link rel='stylesheet' th:href="@{/css/bootstrap-social.css}" />
-<link rel='stylesheet' th:href="@{/css/forgot.css}" />
 <link rel='stylesheet' th:href="@{/css/auth.css}" />
 </head>
 
 
 <body >
-		<form action="#" th:action="@{/forgot}" th:object="${emailDTO4Reset}" th:method="post" class="form-signin" style="background-color:#eee">
+		<form action="#" th:action="@{/forgot}" th:object="${emailDTO4Reset}" th:method="post" class="form-signin">
 
 			<div class="form-signin-heading">Reset password</div>
 
@@ -31,12 +30,12 @@
 			 	<span th:text="#{prop.login.error}" class="alertText"></span>
 			</div>
 
-			<input id="email" type="text" class="form-control" th:field="*{email}"  placeholder="email" /> 
+			<input id="email" type="text" class="form-control input-box" th:field="*{email}"  placeholder="email" /> 
 			<span th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="errorText"></span>
 		
 			<button class="btn btn-default btn-block buttonOne" type="submit">Reset my password</button>
 
-			<div id="backToLogin" class="authLabel"><a href="/login">Back to login page</a></div>
+			<div class="authLabel"><a href="/login">Back to login page</a></div>
 				
 		</form>
 </body>
